@@ -1,0 +1,11 @@
+{
+  "name": "college-leetcode",
+  "version": "1.0.0",
+  "description": "Project to check evryone's leetcode stats",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
