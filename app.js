@@ -17,8 +17,7 @@ app.get("/crysosancher", async (req, res) => {
   ];
   let profileDataArray=[];
 for(let i=0;i<users.length;i++){
-	console.log(i)
-	let profileData=await userProfile(users[i].username);
+	const profileData=await userProfile(users[i].username);
 	profileDataArray.push({
 	username:users[i].username,
 	name:users[i].name,
@@ -28,10 +27,10 @@ for(let i=0;i<users.length;i++){
 	hardProblemSolved:profileData.submitStats.acSubmissionNum[3].count,})
 }
 console.log(profileDataArray);
-  const profileData = await userProfile("crysosancher");
+  //const profileData = await userProfile("crysosancher");
   //console.log(profileData);
   //console.log("line 16",userData);
-  res.render("card", { profileData: profileData });
+  res.render("card", { profileData: profileDataArray });
 });
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
