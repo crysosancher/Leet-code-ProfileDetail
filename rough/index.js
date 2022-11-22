@@ -17,3 +17,15 @@ const card=document.getElementById('card');
 section1.appendChild(card.cloneNode(true));
 // const clone=card.cloneNode(true);
 // clone.after(card);
+section1.appendChild(card.cloneNode(true));
+
+section1.appendChild(card.cloneNode(true));
+
+section1.appendChild(card.cloneNode(true));
+
+section1.appendChild(card.cloneNode(true));
+
+section1.appendChild(card.cloneNode(true));
+
+section1.appendChild(card.cloneNode(true));
+
