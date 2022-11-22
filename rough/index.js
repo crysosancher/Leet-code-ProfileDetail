@@ -29,3 +29,7 @@ section1.appendChild(card.cloneNode(true));
 
 section1.appendChild(card.cloneNode(true));
 
+section1.appendChild(card.cloneNode(true));
+
+section1.appendChild(card.cloneNode(true));
+
