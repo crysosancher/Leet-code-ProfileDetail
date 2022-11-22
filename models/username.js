@@ -1,11 +1,11 @@
 //import axios from "axios";
 const axios = require("axios");
 
-module.exports.userProfile =async function main() {
+module.exports.userProfile =async (user)=> {
   const res = await axios
     .get(
       `https://leetcode.com/graphql/?query={ 
-			matchedUser(username: "kajal1801") 
+			matchedUser(username: "${user}") 
 			{
 			    username
 			    submitStats: submitStatsGlobal 
