@@ -127,7 +127,7 @@ body{
     padding: 10px;
     background-image: radial-gradient( rgb(9, 9, 9), rgb(40, 48, 51));
     backdrop-filter: blur(10px);
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -141,4 +141,9 @@ body{
 .row{
     justify-content: center;
     align-items: center;
+}
+
+.social-handles a{
+    color: rgb(103, 181, 255);
+    margin: 0 0.5rem;
 }
