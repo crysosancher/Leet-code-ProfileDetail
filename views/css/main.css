@@ -6,7 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
-  background-image: url(../img/mainbg.png);
+  background-image: radial-gradient( #090909, #213566);
   background-size: cover;
 }
 
@@ -14,10 +14,8 @@ h1 {
   display: block;
   margin-top:  10%;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 2rem;
-  /* margin-top: 3rem;
-  margin-bottom: 3rem; */
   text-align: center;
   font-family: "Sono", sans-serif;
   font-weight: bold;
@@ -31,39 +29,31 @@ h1 {
 
 button {
   padding: 20px;
-  margin: 20px;
-  background-image: linear-gradient(to right, #6122ff, #f63ab4);
+  margin: 30px;
+  background-color: #67a3f8;
   border: none;
   transition: transform 0.3s;
-  border-radius: 15px;
-  font-size: 1.5rem;
+  border-radius: 0 15px 0 15px;
+  font-size: 2.0rem;
   font-family: 'Signika', sans-serif;;
-  box-shadow: 3px 3px 24px 1px rgb(250, 251, 251);
+  box-shadow: 3px 3px 15px 1px rgb(250, 251, 251);
+  cursor: pointer;
 }
 
 button:hover {
-  background-image: radial-gradient(circle, #f63ab4, #6122ff);
-  transform: scale(1.2);
+  background-color: rgb(47, 80, 120);
+  transform: scale(1.1);
+  box-shadow: 3px 3px 15px 3px rgb(250, 251, 251);
 }
 
 /* MEDIA QUERY */
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  body {
-    background-image: url(../img/mainbg.png);
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1159px) {
-  body {
-    background-image: url(../img/mainbg_tab.png);
-    background-size: cover;
-  }
-}
 
 @media only screen and (max-width: 799px) {
-  body {
-    background-image: url(../img/mainbg_mob.png);
-    background-size: cover;
+  
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
