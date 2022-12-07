@@ -10,6 +10,7 @@
 }
 
 body{
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     background-image: radial-gradient( #090909, #213566);
     background-repeat: no-repeat;
@@ -37,7 +38,7 @@ body{
 }
 
 .input-group{
-    width: 400px;
+    width: 50%;
 }
 
 .btn-search {
@@ -146,4 +147,36 @@ body{
 .social-handles a{
     color: rgb(103, 181, 255);
     margin: 0 0.5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+    .input-group{
+        width: 75%;
+    }
+    .card{
+        width: 15rem;
+        height: 20rem;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-text{
+        font-size: 0.8rem;
+    }
+    .data{
+        font-size: 15px;
+    }
+    .problem{
+        font-size: 15px;
+    }
+    .final{
+        font-size: 20px;
+    }
+    .details{
+        font-size: 1.5rem;
+    }
+    .footer{
+        font-size: 1rem;
+    }
 }

@@ -6,13 +6,13 @@
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
-  background-image: radial-gradient( #090909, #213566);
+  background-image: radial-gradient(#090909, #213566);
   background-size: cover;
 }
 
 h1 {
   display: block;
-  margin-top:  10%;
+  margin-top: 10%;
   color: #fff;
   font-size: 4rem;
   padding: 2rem;
@@ -34,8 +34,8 @@ button {
   border: none;
   transition: transform 0.3s;
   border-radius: 0 15px 0 15px;
-  font-size: 2.0rem;
-  font-family: 'Signika', sans-serif;;
+  font-size: 2rem;
+  font-family: "Signika", sans-serif;
   box-shadow: 3px 3px 15px 1px rgb(250, 251, 251);
   cursor: pointer;
 }
@@ -45,17 +45,21 @@ button:hover {
   transform: scale(1.1);
   transition: 0.3 ease;
   box-shadow: 3px 3px 15px 3px rgb(250, 251, 251);
-  color:rgb(250, 251, 251)
+  color: rgb(250, 251, 251);
 }
 
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 799px) {
-  
-.button {
+  body {
+    display: fixed;
+  }
+
+  .button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 75%;
   }
 }
