@@ -12,7 +12,7 @@
 body{
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    background-image: radial-gradient( #090909, #213566);
+    background-color: rgb(37, 27, 44);
     background-repeat: no-repeat;
 }
 
@@ -33,7 +33,7 @@ body{
     padding-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-family: 'Sono', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-weight: bold;
 }
 
@@ -42,7 +42,8 @@ body{
 }
 
 .btn-search {
-    background: #424242;
+    background: rgb(24, 12, 33);
+    border: 1px solid #1c1c1c;
     border-radius: 0 5px 5px 0;
     color: #fff;
     border-width: 1px;
@@ -73,20 +74,17 @@ body{
     height: 22rem;
     margin: 30px;
     margin-left: 50px;
-    background-color: black;
-    border-radius: 10px;  
+    background-color: rgb(24, 12, 33);
+    border: 2px solid rgb(215, 218, 218);
     transition: transform 0.2s; 
-    box-shadow: 0 8px 25px 1px lightblue;
 }
 
 .card-body{
-    color: #6ab4d6; 
+    color: #edc6fc; 
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .card:hover{
-    background-image: radial-gradient(circle, rgb(65, 60, 60), rgb(9, 9, 9));
-    box-shadow: 0 8px 15px 0px rgb(255, 255, 255);
     transform: scale(1.05);
     transition: 0.3s ease;
 }
@@ -126,17 +124,22 @@ body{
     width: 100%;   
     margin-top: 30px;
     padding: 10px;
-    background-image: radial-gradient( rgb(9, 9, 9), rgb(40, 48, 51));
+    background-color: rgb(24, 12, 33);
     backdrop-filter: blur(10px);
-    color: rgb(255, 255, 255);
+    color: #edc6fc;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 
 .details{
-    font-size: 2rem;
+    font-size: 1.7rem;
+}
+
+.details h4{
+    font-size: 1.5rem;
+    color:rgb(215, 218, 218)
 }
 
 .row{
@@ -145,9 +148,14 @@ body{
 }
 
 .social-handles a{
-    color: rgb(103, 181, 255);
+    color: #edc6fc;
     margin: 0 0.5rem;
 }
+
+.fab:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}   
 
 /* Media Queries */
 @media screen and (max-width: 768px){
